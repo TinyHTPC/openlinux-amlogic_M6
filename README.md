@@ -1,4 +1,4 @@
-openlinux-amlogic_M6
+Openlinux.Amlogic
 ====================
 
 Amlogic linux source from http://openlinux.amlogic.com
