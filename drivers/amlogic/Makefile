@@ -142,4 +142,4 @@ obj-$(CONFIG_MESON_TRUSTZONE) += trustzone/
 
 obj-$(CONFIG_MESON_TRUSTZONE) += secure_monitor/
 
-obj-$(CONFIG_MESON_ATCP) += atcp/
+#obj-$(CONFIG_MESON_ATCP) += atcp/

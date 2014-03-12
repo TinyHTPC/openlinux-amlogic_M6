@@ -125,6 +125,6 @@ source "drivers/amlogic/crypto/Kconfig"
 source "drivers/amlogic/ebsecure/Kconfig"
 
 # anti copy 
-source "drivers/amlogic/atcp/Kconfig"
+#source "drivers/amlogic/atcp/Kconfig"
 
 endmenu
