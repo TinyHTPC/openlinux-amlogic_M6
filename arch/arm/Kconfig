@@ -899,6 +899,14 @@ config PLAT_MESON
 	  Support for Amlogic Meson System-on-Chip.
 
 endchoice
+
+config XBMC_BUILD
+	bool "XBMC support"
+	depends on PLAT_MESON
+	default n
+	help
+	  Compile kernel with Linux XBMC support
+
 #
 # This is sorted alphabetically by mach-* pathname.  However, plat-*
 # Kconfigs may be included either alphabetically (according to the
@@ -1827,12 +1835,13 @@ config CMDLINE_FORCE
 	  loader passes other arguments to the kernel.
 	  This is useful if you cannot or don't want to change the
 	  command-line options your boot loader passes to the kernel.
-
+	  
 config CMDLINE_APPEND
 	bool "Append default kernel command string to bootloader kernel arguments"
 	help
 	  The default kernel command string will be appended to the
 	  command-line arguments provided by the boot loader.
+
 endchoice
 
 config XIP_KERNEL
