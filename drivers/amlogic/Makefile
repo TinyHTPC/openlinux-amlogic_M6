@@ -68,8 +68,8 @@ ifneq ($(wildcard $(srctree)/$(src)/ump/Kbuild),)
     obj-$(CONFIG_UMP) += ump/
     obj-$(CONFIG_MALI400) += mali/
 else
-    obj-$(CONFIG_UMP) += ../../../hardware/arm/gpu/ump/
-    obj-$(CONFIG_MALI400) += ../../../hardware/arm/gpu/mali/
+    obj-$(CONFIG_UMP) += ../../hardware/arm/gpu/ump/
+    obj-$(CONFIG_MALI400) += ../../hardware/arm/gpu/mali/
 endif
 
 obj-y += vfm/

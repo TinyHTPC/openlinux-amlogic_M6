@@ -602,7 +602,7 @@ static struct aml_uart_platform  __initdata aml_uart_plat = {
     .pinmux_uart[4] = NULL
 };
 
-static struct platform_device aml_uart_device __refdata = {
+static struct platform_device aml_uart_device = {
     .name       = "mesonuart",
     .id     = -1,
     .num_resources  = 0,
@@ -3125,7 +3125,7 @@ static __init void meson_init_early(void)
 
 }
 
-MACHINE_START(MESON6_G02, "Amlogic Meson6 g02 customer platform")
+MACHINE_START(MESON6_G02, "ITV05 platform, http://tinyhtpc.co.nz")
     .boot_params    = BOOT_PARAMS_OFFSET,
     .map_io         = meson_map_io,///2
     .init_early     = meson_init_early,///3
